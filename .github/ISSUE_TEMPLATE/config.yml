@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Community Discussions
+    url: https://github.com/YonYon/chatgpt-pdf-exporter/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 📖 Documentation
+    url: https://github.com/YonYon/chatgpt-pdf-exporter#readme
+    about: Check out the README for usage instructions and features
+  - name: 🌟 Show Your Support
+    url: https://github.com/YonYon/chatgpt-pdf-exporter
+    about: Give us a star if you find this extension helpful!
