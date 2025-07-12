@@ -80,5 +80,3 @@ If you encounter any issues or have suggestions:
 - PDF, HTML, and text export functionality
 - Multi-language support
 - Selective message export
-- High-quality rendering with proper formatting
-# chatgpt-pdf-exporter
