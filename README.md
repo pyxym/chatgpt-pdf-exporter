@@ -9,8 +9,6 @@ A Chrome extension that allows you to export ChatGPT conversations to PDF, HTML,
 - 📝 **Multiple export formats**: PDF, HTML, and plain text
 - 🎯 **Selective export**: Choose specific messages to export
 - 🌐 **Multi-language support**: Korean, Japanese, and English
-- 🎨 **Perfect formatting**: Lists, tables, and code blocks rendered correctly
-- 📱 **Responsive design**: Works on desktop and mobile
 
 ## Installation
 
