@@ -1,4 +1,5 @@
 # ChatGPT PDF Exporter
+<img width="1280" height="800" alt="대표 썸네일" src="https://github.com/user-attachments/assets/eaabe16e-9839-4559-a17e-7e3881bc0a57" />
 
 A Chrome extension that allows you to export ChatGPT conversations to PDF, HTML, and text formats with high quality rendering.
 
