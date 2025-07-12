@@ -13,7 +13,8 @@ A Chrome extension that allows you to export ChatGPT conversations to PDF, HTML,
 ## Installation
 
 ### From Chrome Web Store
-1. Visit the Chrome Web Store (link will be available after publishing)
+1. Visit the Chrome Web Store
+    - [link](https://chromewebstore.google.com/detail/chatgpt-%E3%82%B7%E3%83%B3%E3%83%97%E3%83%ABpdf%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88/blnidfgplbgchadddghfohphicdbdgep)
 2. Click "Add to Chrome"
 3. The extension will be added to your browser
 
