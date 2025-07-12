@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "1.1",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://chat.openai.com/*"
+  ],
+  
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"],
+      "js": ["lib/html2canvas.min.js", "lib/jspdf.umd.min.js", "scripts/language-detector.js", "scripts/i18n-manager.js", "scripts/ui-manager.js", "scripts/pdf-generator.js", "scripts/page-observer.js", "scripts/content.js"],
+      "css": ["assets/styles/styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "__MSG_actionTitle__"
+  },
+  
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "32": "assets/images/icon32.png",
+    "48": "assets/images/icon48.png", 
+    "128": "assets/images/icon128.png"
+  },
+  
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["_locales/*/*.json"],
+      "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"]
+    }
+  ],
+  
+  "author": "Youngsu Park"
+}

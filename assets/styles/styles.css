@@ -1,0 +1,628 @@
+/* PDF 저장 버튼 스타일 - ChatGPT 헤더 통합 */
+.pdf-export-button-header {
+  /* ChatGPT btn 클래스와 동일한 스타일 적용 */
+}
+
+/* 네비게이션 바 스타일 (대안) */
+.pdf-export-button-nav {
+  background: transparent !important;
+  color: #6b7280 !important;
+  border: 1px solid #d1d5db !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  font-family: inherit !important;
+  margin-left: 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  white-space: nowrap !important;
+}
+
+.pdf-export-button-nav:hover {
+  background: #f3f4f6 !important;
+  border-color: #10a37f !important;
+  color: #10a37f !important;
+}
+
+.pdf-export-button-nav:active {
+  background: #e5e7eb !important;
+  transform: scale(0.98) !important;
+}
+
+/* 대안 위치 스타일 */
+.pdf-export-button-fallback {
+  position: fixed !important;
+  top: 80px !important;
+  right: 20px !important;
+  z-index: 10000 !important;
+  background: #10a37f !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 16px !important;
+  border-radius: 8px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.2s ease !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.pdf-export-button-fallback:hover {
+  background: #0d8f6f !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* 메시지 선택 체크박스 */
+.message-selector {
+  position: absolute !important;
+  left: -30px !important;
+  top: 10px !important;
+  width: 20px !important;
+  height: 20px !important;
+  background: white !important;
+  border: 2px solid #d1d5db !important;
+  border-radius: 4px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  font-size: 12px !important;
+  color: #10a37f !important;
+  transition: all 0.2s ease !important;
+  z-index: 1000 !important;
+}
+
+.message-selector:hover {
+  border-color: #10a37f !important;
+  background: #f0fdf4 !important;
+}
+
+/* 선택된 메시지 하이라이트 */
+.selected-message {
+  background: rgba(16, 163, 127, 0.05) !important;
+  border-left: 3px solid #10a37f !important;
+  padding-left: 15px !important;
+}
+
+/* 모달 스타일 */
+#pdf-export-modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 10001 !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.modal-content {
+  background: #2d3748 !important;
+  border-radius: 12px !important;
+  width: 90% !important;
+  max-width: 500px !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+  animation: modalSlideIn 0.3s ease !important;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  padding: 24px 24px 0 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.modal-header h3 {
+  margin: 0 !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #e2e8f0 !important;
+}
+
+.close-btn {
+  font-size: 24px !important;
+  cursor: pointer !important;
+  color: #cbd5e0 !important;
+  width: 30px !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  transition: all 0.2s ease !important;
+}
+
+.close-btn:hover {
+  background: #4a5568 !important;
+  color: #e2e8f0 !important;
+}
+
+.modal-body {
+  padding: 24px !important;
+}
+
+.export-options {
+  margin-bottom: 20px !important;
+}
+
+.export-options h4,
+.settings h4 {
+  margin: 0 0 12px 0 !important;
+  font-size: 15px !important;
+  color: #e2e8f0 !important;
+  font-weight: 600 !important;
+}
+
+.export-options label {
+  display: block !important;
+  margin-bottom: 8px !important;
+  font-size: 14px !important;
+  color: #e2e8f0 !important;
+  cursor: pointer !important;
+  padding: 8px !important;
+  border-radius: 4px !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.export-options label:hover {
+  background: #4a5568 !important;
+}
+
+.export-options input[type="radio"] {
+  margin-right: 8px !important;
+}
+
+.format-options {
+  margin-bottom: 20px !important;
+  padding: 16px !important;
+  background: #f8fafc !important;
+  border-radius: 8px !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+.format-options h4 {
+  margin: 0 0 12px 0 !important;
+  font-size: 15px !important;
+  color: #e2e8f0 !important;
+  font-weight: 600 !important;
+}
+
+.format-btn {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 8px !important;
+  padding: 12px 16px !important;
+  border: 2px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  background: white !important;
+  color: #374151 !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  text-align: left !important;
+  font-weight: 500 !important;
+}
+
+.format-btn:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.print-btn:hover {
+  border-color: #10a37f !important;
+  background: #f0fdf4 !important;
+  color: #059669 !important;
+}
+
+.html-btn:hover {
+  border-color: #f59e0b !important;
+  background: #fffbeb !important;
+  color: #d97706 !important;
+}
+
+.text-btn:hover {
+  border-color: #8b5cf6 !important;
+  background: #faf5ff !important;
+  color: #7c3aed !important;
+}
+
+.text-pdf-btn:hover {
+  border-color: #059669 !important;
+  background: #ecfdf5 !important;
+  color: #059669 !important;
+}
+
+.settings {
+  margin-bottom: 20px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+.settings label {
+  display: block !important;
+  margin-bottom: 8px !important;
+  font-size: 14px !important;
+  color: #e2e8f0 !important;
+  cursor: pointer !important;
+}
+
+.settings input[type="checkbox"] {
+  margin-right: 8px !important;
+}
+
+.title-section {
+  margin-bottom: 20px !important;
+  padding-top: 16px !important;
+  border-top: 1px solid #e5e7eb !important;
+}
+
+.title-section label {
+  display: block !important;
+  margin-bottom: 8px !important;
+  font-size: 14px !important;
+  color: #e2e8f0 !important;
+  cursor: pointer !important;
+}
+
+.title-section input[type="checkbox"] {
+  margin-right: 8px !important;
+}
+
+.title-input-container {
+  margin-top: 8px !important;
+  margin-left: 24px !important;
+}
+
+.title-input {
+  width: 100% !important;
+  padding: 8px 12px !important;
+  border: 1px solid #4a5568 !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  color: #e2e8f0 !important;
+  background: #4a5568 !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.title-input:focus {
+  outline: none !important;
+  border-color: #10a37f !important;
+  box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.3) !important;
+}
+
+.modal-footer {
+  padding: 0 24px 24px !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  gap: 12px !important;
+}
+
+.cancel-btn {
+  background: #4a5568 !important;
+  color: #e2e8f0 !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.cancel-btn:hover {
+  background: #718096 !important;
+  transform: translateY(-1px) !important;
+}
+
+/* 생성하기 버튼 스타일 */
+.generate-btn {
+  background: #10a37f !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.generate-btn:hover {
+  background: #0d8f6f !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 8px rgba(16, 163, 127, 0.2) !important;
+}
+
+/* 새로운 모달 섹션 스타일 */
+.export-type-section,
+.title-section,
+.options-section,
+.format-section {
+  margin-bottom: 24px !important;
+  padding-bottom: 16px !important;
+  border-bottom: 1px solid #4a5568 !important;
+}
+
+.format-section {
+  border-bottom: none !important;
+}
+
+.export-type-section h4,
+.title-section h4,
+.options-section h4,
+.format-section h4 {
+  margin: 0 0 12px 0 !important;
+  font-size: 15px !important;
+  color: #e2e8f0 !important;
+  font-weight: 600 !important;
+}
+
+.export-type-options,
+.options-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.export-type-options label,
+.options-container label {
+  display: flex !important;
+  align-items: center !important;
+  padding: 8px !important;
+  border-radius: 4px !important;
+  transition: background-color 0.2s ease !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  color: #e2e8f0 !important;
+}
+
+.export-type-options label:hover,
+.options-container label:hover {
+  background: #4a5568 !important;
+}
+
+.export-type-options input,
+.options-container input {
+  margin-right: 8px !important;
+}
+
+.format-buttons {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.format-btn {
+  display: block !important;
+  width: 100% !important;
+  padding: 12px 16px !important;
+  border: 2px solid #4a5568 !important;
+  border-radius: 8px !important;
+  background: #4a5568 !important;
+  color: #e2e8f0 !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  text-align: left !important;
+  font-weight: 500 !important;
+}
+
+.format-btn:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  background: #718096 !important;
+}
+
+.format-btn.active {
+  border-color: #10a37f !important;
+  background: #10a37f !important;
+  color: #ffffff !important;
+}
+
+.format-btn.html-btn:hover {
+  border-color: #f59e0b !important;
+  background: #f59e0b !important;
+  color: #ffffff !important;
+}
+
+.format-btn.text-btn:hover {
+  border-color: #8b5cf6 !important;
+  background: #8b5cf6 !important;
+  color: #ffffff !important;
+}
+
+.format-btn.html-btn.active {
+  border-color: #f59e0b !important;
+  background: #f59e0b !important;
+  color: #ffffff !important;
+}
+
+.format-btn.text-btn.active {
+  border-color: #8b5cf6 !important;
+  background: #8b5cf6 !important;
+  color: #ffffff !important;
+}
+
+/* 알림 메시지 */
+.pdf-notification {
+  position: fixed !important;
+  top: 80px !important;
+  right: 20px !important;
+  background: #10a37f !important;
+  color: white !important;
+  padding: 12px 20px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  z-index: 10002 !important;
+  animation: slideInRight 0.3s ease, slideOutRight 0.3s ease 3.7s !important;
+  animation-fill-mode: forwards !important;
+  max-width: 300px !important;
+  word-wrap: break-word !important;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .pdf-export-button-chat {
+    width: 28px !important;
+    height: 28px !important;
+    padding: 6px !important;
+    margin-right: 4px !important;
+  }
+  
+  .pdf-export-button-chat svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  
+  .pdf-export-button-nav {
+    padding: 6px 12px !important;
+    font-size: 12px !important;
+    margin-left: 4px !important;
+  }
+  
+  .pdf-export-button-fallback {
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    top: auto !important;
+    padding: 10px 16px !important;
+    font-size: 12px !important;
+  }
+  
+  .modal-content {
+    width: 95% !important;
+    margin: 10px !important;
+  }
+  
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding: 16px !important;
+  }
+  
+  .pdf-notification {
+    right: 10px !important;
+    left: 10px !important;
+    max-width: none !important;
+  }
+}
+
+/* ChatGPT 다크모드 대응 */
+@media (prefers-color-scheme: dark) {
+  .pdf-export-button-chat {
+    background: transparent !important;
+    color: #d1d5db !important;
+  }
+  
+  .pdf-export-button-chat:hover {
+    background: #374151 !important;
+    color: #f9fafb !important;
+  }
+  
+  .pdf-export-button-nav {
+    background: transparent !important;
+    color: #d1d5db !important;
+    border-color: #4b5563 !important;
+  }
+  
+  .pdf-export-button-nav:hover {
+    background: #374151 !important;
+    border-color: #10a37f !important;
+    color: #10a37f !important;
+  }
+  
+  .pdf-export-button-fallback {
+    background: #10a37f !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+  .modal-content {
+    background: #1f2937 !important;
+    color: white !important;
+  }
+  
+  .modal-header h3 {
+    color: white !important;
+  }
+  
+  .export-options label,
+  .settings label,
+  .format-options h4,
+  .export-options h4,
+  .settings h4 {
+    color: #d1d5db !important;
+  }
+  
+  .export-options label:hover {
+    background: #374151 !important;
+  }
+  
+  .format-btn {
+    background: #374151 !important;
+    color: white !important;
+    border-color: #4b5563 !important;
+  }
+  
+  .format-options {
+    background: #374151 !important;
+    border-color: #4b5563 !important;
+  }
+  
+  .title-section {
+    border-color: #4b5563 !important;
+  }
+  
+  .title-section label {
+    color: #d1d5db !important;
+  }
+  
+  .title-input {
+    background: #374151 !important;
+    border-color: #4b5563 !important;
+    color: white !important;
+  }
+  
+  .title-input:focus {
+    border-color: #10a37f !important;
+    box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.2) !important;
+  }
+}

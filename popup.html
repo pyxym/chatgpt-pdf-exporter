@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .header h2 {
+      margin: 0;
+      color: #10a37f;
+      font-size: 18px;
+    }
+    
+    .info {
+      background: #f8fafc;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+    
+    .quick-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .action-btn {
+      background: #10a37f;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    
+    .action-btn:hover {
+      background: #0d8f6f;
+    }
+    
+    .action-btn.secondary {
+      background: #f1f5f9;
+      color: #475569;
+    }
+    
+    .action-btn.secondary:hover {
+      background: #e2e8f0;
+    }
+    
+    .shortcuts {
+      margin-top: 20px;
+      padding-top: 15px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 12px;
+      color: #64748b;
+    }
+    
+    .shortcuts h4 {
+      margin: 0 0 8px 0;
+      color: #475569;
+    }
+    
+    .shortcut {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    
+    .shortcut-key {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    
+    /* Accordion styles */
+    #toggleInstructions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .arrow {
+      font-size: 12px;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateZ(0); /* 하드웨어 가속 */
+      will-change: transform;
+    }
+    
+    .arrow.rotated {
+      transform: rotate(180deg);
+    }
+    
+    .instructions-panel {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      background: #f8fafc;
+      border-radius: 6px;
+      margin-top: 10px;
+      will-change: height;
+    }
+    
+    .instructions-content {
+      padding: 15px;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    
+    .instructions-content h4 {
+      margin: 0 0 8px 0;
+      color: #475569;
+      font-size: 14px;
+    }
+    
+    .instructions-content h4:not(:first-child) {
+      margin-top: 15px;
+    }
+    
+    .instructions-content ol, .instructions-content ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    
+    .instructions-content li {
+      margin-bottom: 4px;
+      color: #64748b;
+    }
+    
+    .instructions-content ul ul {
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2 data-i18n="popupTitle">📄 ChatGPT PDF 저장</h2>
+  </div>
+  
+  <div class="info" data-i18n="popupInfo">
+    ChatGPT 페이지에서 대화 내용을 PDF로 저장할 수 있습니다.
+  </div>
+  
+  <div class="quick-actions">
+    <button class="action-btn" id="openChatGPT" data-i18n="openChatGPT">
+      ChatGPT 열기
+    </button>
+    <button class="action-btn secondary" id="toggleInstructions">
+      <span class="button-text" data-i18n="showInstructions">사용 방법 보기</span>
+      <span class="arrow">▼</span>
+    </button>
+  </div>
+  
+  <div class="instructions-panel" id="instructionsPanel">
+    <div class="instructions-content">
+      <h4 data-i18n="instructionsTitle">사용 방법:</h4>
+      <ol>
+        <li data-i18n="instructionStep1">ChatGPT 페이지 (chatgpt.com)로 이동</li>
+        <li data-i18n="instructionStep2">상단 네비게이션의 "PDF Export" 버튼 클릭</li>
+        <li data-i18n="instructionStep3">내보내기 형식 선택:
+          <ul>
+            <li data-i18n="instructionStep3a">PDF: 고품질 PDF 파일로 저장</li>
+            <li data-i18n="instructionStep3b">HTML: 웹 페이지 파일로 저장</li>
+            <li data-i18n="instructionStep3c">텍스트: 일반 텍스트 파일로 저장</li>
+          </ul>
+        </li>
+        <li data-i18n="instructionStep4">메시지 범위 선택:
+          <ul>
+            <li data-i18n="instructionStep4a">전체 대화: 모든 메시지 포함</li>
+            <li data-i18n="instructionStep4b">선택된 메시지: 원하는 메시지만 선택</li>
+          </ul>
+        </li>
+        <li data-i18n="instructionStep5">추가 옵션 설정:
+          <ul>
+            <li data-i18n="instructionStep5a">타임스탬프 포함</li>
+            <li data-i18n="instructionStep5b">사용자 정보 표시</li>
+            <li data-i18n="instructionStep5c">깔끔한 포맷 적용</li>
+            <li data-i18n="instructionStep5d">사용자 정의 제목</li>
+          </ul>
+        </li>
+        <li data-i18n="instructionStep6">"생성하기" 버튼 클릭</li>
+      </ol>
+      
+      <h4 data-i18n="messageSelectionTitle">메시지 선택 방법:</h4>
+      <ul>
+        <li data-i18n="messageSelectionInfo1">각 메시지 옆의 체크박스 클릭</li>
+        <li data-i18n="messageSelectionInfo2">선택된 메시지는 하이라이트 표시</li>
+      </ul>
+    </div>
+  </div>
+  
+  <script src="scripts/popup.js"></script>
+</body>
+</html>

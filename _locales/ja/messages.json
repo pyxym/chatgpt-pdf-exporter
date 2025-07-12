@@ -1,0 +1,285 @@
+{
+  "extName": {
+    "message": "ChatGPT PDFエクスポート",
+    "description": "拡張機能名"
+  },
+  "extDescription": {
+    "message": "ChatGPTの会話をPDF、HTML、テキスト形式で保存できます。メッセージ選択、カスタムタイトルなど豊富なオプションを提供します。",
+    "description": "拡張機能の説明"
+  },
+  "actionTitle": {
+    "message": "シンプルPDF保存",
+    "description": "拡張機能アクションタイトル"
+  },
+  
+  "popupTitle": {
+    "message": "📄 ChatGPT PDF保存",
+    "description": "ポップアップタイトル"
+  },
+  "popupInfo": {
+    "message": "ChatGPTページから会話内容をPDFで保存できます。",
+    "description": "ポップアップ情報テキスト"
+  },
+  "openChatGPT": {
+    "message": "ChatGPTを開く",
+    "description": "ChatGPTを開くボタン"
+  },
+  "showInstructions": {
+    "message": "使い方を表示",
+    "description": "使い方を表示するボタン"
+  },
+  "hideInstructions": {
+    "message": "使い方を非表示",
+    "description": "使い方を非表示にするボタン"
+  },
+  
+  "instructionsTitle": {
+    "message": "使用方法：",
+    "description": "使用方法セクションタイトル"
+  },
+  "instructionStep1": {
+    "message": "ChatGPTページ (chatgpt.com) に移動",
+    "description": "最初のステップ"
+  },
+  "instructionStep2": {
+    "message": "上部ナビゲーションの「PDF Export」ボタンをクリック",
+    "description": "2番目のステップ"
+  },
+  "instructionStep3": {
+    "message": "エクスポート形式を選択：",
+    "description": "3番目のステップ"
+  },
+  "instructionStep3a": {
+    "message": "PDF：高品質PDFファイルで保存",
+    "description": "エクスポート形式の説明"
+  },
+  "instructionStep3b": {
+    "message": "HTML：ウェブページファイルで保存",
+    "description": "エクスポート形式の説明"
+  },
+  "instructionStep3c": {
+    "message": "テキスト：プレーンテキストファイルで保存",
+    "description": "エクスポート形式の説明"
+  },
+  "instructionStep4": {
+    "message": "メッセージ範囲を選択：",
+    "description": "4番目のステップ"
+  },
+  "instructionStep4a": {
+    "message": "全会話：すべてのメッセージを含む",
+    "description": "メッセージ範囲の説明"
+  },
+  "instructionStep4b": {
+    "message": "選択されたメッセージ：特定のメッセージのみ選択",
+    "description": "メッセージ範囲の説明"
+  },
+  "instructionStep5": {
+    "message": "追加オプション設定：",
+    "description": "5番目のステップ"
+  },
+  "instructionStep5a": {
+    "message": "タイムスタンプを含む",
+    "description": "オプション説明"
+  },
+  "instructionStep5b": {
+    "message": "ユーザー情報を表示",
+    "description": "オプション説明"
+  },
+  "instructionStep5c": {
+    "message": "クリーンフォーマットを適用",
+    "description": "オプション説明"
+  },
+  "instructionStep5d": {
+    "message": "カスタムタイトル",
+    "description": "オプション説明"
+  },
+  "instructionStep6": {
+    "message": "「生成する」ボタンをクリック",
+    "description": "6番目のステップ"
+  },
+  
+  
+  "messageSelectionTitle": {
+    "message": "メッセージ選択方法：",
+    "description": "メッセージ選択セクションタイトル"
+  },
+  "messageSelectionInfo1": {
+    "message": "各メッセージ横のチェックボックスをクリック",
+    "description": "メッセージ選択の説明"
+  },
+  "messageSelectionInfo2": {
+    "message": "選択されたメッセージはハイライト表示",
+    "description": "メッセージ選択の説明"
+  },
+  
+  "exportButtonText": {
+    "message": "PDF保存",
+    "description": "エクスポートボタンテキスト"
+  },
+  
+  "modalTitle": {
+    "message": "エクスポートオプション",
+    "description": "エクスポートモーダルタイトル"
+  },
+  "exportTypeLabel": {
+    "message": "エクスポートタイプ：",
+    "description": "エクスポートタイプラベル"
+  },
+  "exportTypeAll": {
+    "message": "全会話",
+    "description": "全メッセージエクスポートオプション"
+  },
+  "exportTypeSelected": {
+    "message": "選択されたメッセージ",
+    "description": "選択されたメッセージエクスポートオプション"
+  },
+  
+  "optionsLabel": {
+    "message": "オプション：",
+    "description": "オプションセクションラベル"
+  },
+  "includeTimestamp": {
+    "message": "タイムスタンプを含む",
+    "description": "タイムスタンプを含むオプション"
+  },
+  "includeUserInfo": {
+    "message": "ユーザー情報を含む",
+    "description": "ユーザー情報を含むオプション"
+  },
+  "cleanFormat": {
+    "message": "クリーンフォーマット",
+    "description": "クリーンフォーマットオプション"
+  },
+  "includeTitle": {
+    "message": "タイトルを含める",
+    "description": "タイトルを含めるオプション"
+  },
+  "titlePlaceholder": {
+    "message": "PDFタイトルを入力...",
+    "description": "タイトル入力プレースホルダー"
+  },
+  
+  "exportFormatLabel": {
+    "message": "エクスポート形式：",
+    "description": "エクスポート形式ラベル"
+  },
+  "exportPDF": {
+    "message": "PDF形式",
+    "description": "PDFエクスポート形式"
+  },
+  "exportHTML": {
+    "message": "HTML形式",
+    "description": "HTMLエクスポート形式"
+  },
+  "exportText": {
+    "message": "テキスト形式",
+    "description": "テキストエクスポート形式"
+  },
+  "generateButton": {
+    "message": "生成する",
+    "description": "生成するボタン"
+  },
+  "cancel": {
+    "message": "キャンセル",
+    "description": "キャンセルボタン"
+  },
+  
+  "defaultTitle": {
+    "message": "ChatGPT会話",
+    "description": "デフォルトPDFタイトル"
+  },
+  "defaultChatTitle": {
+    "message": "ChatGPT チャット履歴",
+    "description": "デフォルトチャットタイトル"
+  },
+  "generatedDate": {
+    "message": "生成日",
+    "description": "生成日付ラベル"
+  },
+  
+  "notificationExporting": {
+    "message": "エクスポート中...",
+    "description": "エクスポート通知"
+  },
+  "notificationSuccess": {
+    "message": "エクスポートが正常に完了しました！",
+    "description": "成功通知"
+  },
+  "notificationError": {
+    "message": "エクスポートに失敗しました。もう一度お試しください。",
+    "description": "エラー通知"
+  },
+  "notificationNoMessages": {
+    "message": "エクスポートするメッセージがありません。",
+    "description": "メッセージなし通知"
+  },
+  "notificationNoSelection": {
+    "message": "エクスポートするメッセージを選択してください。",
+    "description": "選択なし通知"
+  },
+  
+  "errorModalTitle": {
+    "message": "PDF生成ガイド",
+    "description": "エラーモーダルタイトル"
+  },
+  "errorContentTooLarge": {
+    "message": "チャット内容が多いため作業を完了できませんでした",
+    "description": "大容量コンテンツエラータイトル"
+  },
+  "errorContentTooLargeDesc": {
+    "message": "次の代替方法をお試しください。",
+    "description": "大容量コンテンツエラー説明"
+  },
+  "errorGeneralTitle": {
+    "message": "PDF生成中にエラーが発生しました。",
+    "description": "一般エラータイトル"
+  },
+  "errorGeneralDesc": {
+    "message": "ブラウザメモリ不足やコンテンツサイズの問題が考えられます。",
+    "description": "一般エラー説明"
+  },
+  "solutionsTitle": {
+    "message": "その他の保存方法：",
+    "description": "解決方法セクションタイトル"
+  },
+  "solutionSelectMessages": {
+    "message": "一部のメッセージのみエクスポート",
+    "description": "メッセージ選択解決方法"
+  },
+  "solutionSelectMessagesDesc": {
+    "message": "チェックボックスを使用して必要なメッセージのみ選択して再試行",
+    "description": "メッセージ選択解決方法説明"
+  },
+  "solutionHtmlExport": {
+    "message": "HTML形式でエクスポート",
+    "description": "HTMLエクスポート解決方法"
+  },
+  "solutionHtmlExportDesc": {
+    "message": "ウェブページファイルとして保存してブラウザで確認",
+    "description": "HTMLエクスポート解決方法説明"
+  },
+  "solutionTextExport": {
+    "message": "テキスト形式でエクスポート",
+    "description": "テキストエクスポート解決方法"
+  },
+  "solutionTextExportDesc": {
+    "message": "シンプルなテキストファイルとして保存して軽量に保管",
+    "description": "テキストエクスポート解決方法説明"
+  },
+  "closeButton": {
+    "message": "閉じる",
+    "description": "モーダル閉じるボタン"
+  },
+  "selectMessagesNotification": {
+    "message": "📑 メッセージを選択してから、もう一度PDF保存を試してください。",
+    "description": "メッセージ選択通知"
+  },
+  "exportAsHTML": {
+    "message": "HTML形式で保存",
+    "description": "HTMLエクスポートボタンテキスト"
+  },
+  "exportAsText": {
+    "message": "テキスト形式で保存",
+    "description": "テキストエクスポートボタンテキスト"
+  }
+}
