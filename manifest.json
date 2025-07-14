@@ -44,12 +44,5 @@
     "extension_pages": "script-src 'self'; object-src 'self';"
   },
   
-  "web_accessible_resources": [
-    {
-      "resources": ["_locales/*/*.json"],
-      "matches": ["https://chatgpt.com/*", "https://chat.openai.com/*"]
-    }
-  ],
-  
   "author": "Youngsu Park"
 }
