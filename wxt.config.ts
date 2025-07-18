@@ -1,0 +1,13 @@
+import { defineConfig } from 'wxt';
+
+// See https://wxt.dev/api/config.html
+export default defineConfig({
+  manifest: {
+    name: '__MSG_extName__',
+    description: '__MSG_extDescription__',
+    default_locale: 'en',
+    permissions: ['activeTab', 'downloads'],
+    host_permissions: ['https://chatgpt.com/*', 'https://chat.openai.com/*'],
+    author: { email: 'youngsu.park@example.com' },
+  },
+});

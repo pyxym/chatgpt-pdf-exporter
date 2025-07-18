@@ -1,0 +1,285 @@
+{
+  "extName": {
+    "message": "ChatGPT PDF Exporter",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Export ChatGPT conversations to PDF, HTML, and text formats. Features message selection, custom titles, and more export options.",
+    "description": "Extension description"
+  },
+  "actionTitle": {
+    "message": "Simple PDF Save",
+    "description": "Extension action title"
+  },
+  
+  "popupTitle": {
+    "message": "📄 ChatGPT PDF Save",
+    "description": "Popup title"
+  },
+  "popupInfo": {
+    "message": "You can save ChatGPT conversation content as PDF from the ChatGPT page.",
+    "description": "Popup info text"
+  },
+  "openChatGPT": {
+    "message": "Open ChatGPT",
+    "description": "Button to open ChatGPT"
+  },
+  "showInstructions": {
+    "message": "Show Instructions",
+    "description": "Button to show instructions"
+  },
+  "hideInstructions": {
+    "message": "Hide Instructions",
+    "description": "Button to hide instructions"
+  },
+  
+  "instructionsTitle": {
+    "message": "How to Use:",
+    "description": "Instructions section title"
+  },
+  "instructionStep1": {
+    "message": "Go to ChatGPT page (chatgpt.com)",
+    "description": "First step of instructions"
+  },
+  "instructionStep2": {
+    "message": "Click 'PDF Export' button in the top navigation",
+    "description": "Second step of instructions"
+  },
+  "instructionStep3": {
+    "message": "Select export format:",
+    "description": "Third step of instructions"
+  },
+  "instructionStep3a": {
+    "message": "PDF: Save as high-quality PDF file",
+    "description": "Export format explanation"
+  },
+  "instructionStep3b": {
+    "message": "HTML: Save as web page file",
+    "description": "Export format explanation"
+  },
+  "instructionStep3c": {
+    "message": "Text: Save as plain text file",
+    "description": "Export format explanation"
+  },
+  "instructionStep4": {
+    "message": "Select message range:",
+    "description": "Fourth step of instructions"
+  },
+  "instructionStep4a": {
+    "message": "Full conversation: Include all messages",
+    "description": "Message range explanation"
+  },
+  "instructionStep4b": {
+    "message": "Selected messages: Choose specific messages",
+    "description": "Message range explanation"
+  },
+  "instructionStep5": {
+    "message": "Configure additional options:",
+    "description": "Fifth step of instructions"
+  },
+  "instructionStep5a": {
+    "message": "Include timestamp",
+    "description": "Option explanation"
+  },
+  "instructionStep5b": {
+    "message": "Show user information",
+    "description": "Option explanation"
+  },
+  "instructionStep5c": {
+    "message": "Apply clean format",
+    "description": "Option explanation"
+  },
+  "instructionStep5d": {
+    "message": "Custom title",
+    "description": "Option explanation"
+  },
+  "instructionStep6": {
+    "message": "Click 'Generate' button",
+    "description": "Sixth step of instructions"
+  },
+  
+  
+  "messageSelectionTitle": {
+    "message": "Message Selection:",
+    "description": "Message selection section title"
+  },
+  "messageSelectionInfo1": {
+    "message": "Click checkbox next to each message",
+    "description": "Message selection instruction"
+  },
+  "messageSelectionInfo2": {
+    "message": "Selected messages are highlighted",
+    "description": "Message selection instruction"
+  },
+  
+  "exportButtonText": {
+    "message": "PDF Save",
+    "description": "Export button text"
+  },
+  
+  "modalTitle": {
+    "message": "Export Options",
+    "description": "Export modal title"
+  },
+  "exportTypeLabel": {
+    "message": "Export Type:",
+    "description": "Export type label"
+  },
+  "exportTypeAll": {
+    "message": "Full Conversation",
+    "description": "Export all messages option"
+  },
+  "exportTypeSelected": {
+    "message": "Selected Messages",
+    "description": "Export selected messages option"
+  },
+  
+  "optionsLabel": {
+    "message": "Options:",
+    "description": "Options section label"
+  },
+  "includeTimestamp": {
+    "message": "Include Timestamp",
+    "description": "Include timestamp option"
+  },
+  "includeUserInfo": {
+    "message": "Include User Info",
+    "description": "Include user info option"
+  },
+  "cleanFormat": {
+    "message": "Clean Format",
+    "description": "Clean format option"
+  },
+  "includeTitle": {
+    "message": "Include Title",
+    "description": "Include title option"
+  },
+  "titlePlaceholder": {
+    "message": "Enter PDF title...",
+    "description": "Title input placeholder"
+  },
+  
+  "exportFormatLabel": {
+    "message": "Export Format:",
+    "description": "Export format label"
+  },
+  "exportPDF": {
+    "message": "PDF",
+    "description": "PDF export format"
+  },
+  "exportHTML": {
+    "message": "HTML",
+    "description": "HTML export format"
+  },
+  "exportText": {
+    "message": "Text",
+    "description": "Text export format"
+  },
+  "generateButton": {
+    "message": "Generate",
+    "description": "Generate button"
+  },
+  "cancel": {
+    "message": "Cancel",
+    "description": "Cancel button"
+  },
+  
+  "defaultTitle": {
+    "message": "ChatGPT Conversation",
+    "description": "Default PDF title"
+  },
+  "defaultChatTitle": {
+    "message": "ChatGPT Chat History",
+    "description": "Default chat title"
+  },
+  "generatedDate": {
+    "message": "Generated",
+    "description": "Generated date label"
+  },
+  
+  "notificationExporting": {
+    "message": "Exporting...",
+    "description": "Exporting notification"
+  },
+  "notificationSuccess": {
+    "message": "Export completed successfully!",
+    "description": "Success notification"
+  },
+  "notificationError": {
+    "message": "Export failed. Please try again.",
+    "description": "Error notification"
+  },
+  "notificationNoMessages": {
+    "message": "No messages to export.",
+    "description": "No messages notification"
+  },
+  "notificationNoSelection": {
+    "message": "Please select messages to export.",
+    "description": "No selection notification"
+  },
+  
+  "errorModalTitle": {
+    "message": "PDF Generation Guide",
+    "description": "Error modal title"
+  },
+  "errorContentTooLarge": {
+    "message": "Unable to complete due to large chat content",
+    "description": "Large content error title"
+  },
+  "errorContentTooLargeDesc": {
+    "message": "Please try one of these alternative methods.",
+    "description": "Large content error description"
+  },
+  "errorGeneralTitle": {
+    "message": "An error occurred while generating PDF.",
+    "description": "General error title"
+  },
+  "errorGeneralDesc": {
+    "message": "This may be due to browser memory shortage or content size issues.",
+    "description": "General error description"
+  },
+  "solutionsTitle": {
+    "message": "Alternative save options:",
+    "description": "Solutions section title"
+  },
+  "solutionSelectMessages": {
+    "message": "Export selected messages only",
+    "description": "Message selection solution"
+  },
+  "solutionSelectMessagesDesc": {
+    "message": "Use checkboxes to select only the messages you need and try again",
+    "description": "Message selection solution description"
+  },
+  "solutionHtmlExport": {
+    "message": "Export as HTML format",
+    "description": "HTML export solution"
+  },
+  "solutionHtmlExportDesc": {
+    "message": "Save as web page file to view in browser",
+    "description": "HTML export solution description"
+  },
+  "solutionTextExport": {
+    "message": "Export as text format",
+    "description": "Text export solution"
+  },
+  "solutionTextExportDesc": {
+    "message": "Save as simple text file for lightweight storage",
+    "description": "Text export solution description"
+  },
+  "closeButton": {
+    "message": "Close",
+    "description": "Modal close button"
+  },
+  "selectMessagesNotification": {
+    "message": "📑 Please select messages and try PDF export again.",
+    "description": "Select messages notification"
+  },
+  "exportAsHTML": {
+    "message": "Save as HTML format",
+    "description": "HTML export button text"
+  },
+  "exportAsText": {
+    "message": "Save as Text format",
+    "description": "Text export button text"
+  }
+}
